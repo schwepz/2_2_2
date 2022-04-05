@@ -27,7 +27,7 @@
     <tr th:each="cars, state : ${cars}"
         class="row" th:classappend="${state.odd} ? 'odd-row' : 'even-row'">
         <td th:utext="${cars.model}">model</td>
-        <td th:utext="${cars.series}">Full series</td>
+        <td th:utext="${cars.series}">series</td>
         <td th:utext="${cars.year}">year</td>
     </tr>
 </table>
